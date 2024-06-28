@@ -1,0 +1,95 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #434343);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.game-board {
+  margin-right: 20px;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #434343;
+  border: 2px solid #666666;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.square:hover {
+  background: #666666;
+  transform: scale(1.1);
+}
+
+button {
+  background: #666666;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #888888;
+}
+
+.reset-button {
+  background: #ff4081;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reset-button:hover {
+  background: #ff80ab;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.game-info ol {
+  padding-left: 0;
+}
+
+.game-info button {
+  margin-bottom: 10px;
+}
