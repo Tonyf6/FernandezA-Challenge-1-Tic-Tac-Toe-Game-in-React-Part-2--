@@ -1,11 +1,10 @@
-import React from 'react';
 
 interface SquareProps {
   value: string | null;
   onSquareClick: () => void;
 }
 
-const Square: React.FC<SquareProps> = ({ value, onSquareClick }) => {
+const Square = ({ value, onSquareClick }: SquareProps) => {
   return (
     <button className="square" onClick={onSquareClick}>
       {value}

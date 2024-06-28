@@ -1,4 +1,3 @@
-import React from 'react';
 import Square from './Square';
 
 interface BoardProps {
@@ -7,7 +6,7 @@ interface BoardProps {
   onPlay: (nextSquares: Array<string | null>) => void;
 }
 
-const Board: React.FC<BoardProps> = ({ xIsNext, squares, onPlay }) => {
+const Board = ({ xIsNext, squares, onPlay }: BoardProps) => {
   const handleClick = (i: number) => {
     if (calculateWinner(squares) || squares[i]) {
       return;
