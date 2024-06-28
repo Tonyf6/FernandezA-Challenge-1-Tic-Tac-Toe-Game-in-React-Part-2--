@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #000000, #434343);
@@ -73,4 +72,23 @@ button:hover {
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
- 
+  transition: background 0.3s;
+}
+
+.reset-button:hover {
+  background: #ff80ab;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.game-info ol {
+  padding-left: 0;
+}
+
+.game-info button {
+  margin-bottom: 10px;
+}
